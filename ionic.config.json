@@ -1,0 +1,7 @@
+{
+  "name": "playtime_AG",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

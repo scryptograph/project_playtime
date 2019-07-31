@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar class="headingselector">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/greeting"></ion-back-button>
+        </ion-buttons>
+    <ion-title>Greeting Module</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="selector">
+  <div class="button-module">
+    <ion-row style="height: 20px"></ion-row>
+      <h1 size="15" align="center"> {{ question.title }} </h1>
+    <ion-row style="height: 25px"></ion-row>
+    <ion-row>
+      <ion-col>
+          <div class="button1" (click)='animateButton1()'> {{question.ans1}} </div>
+      </ion-col>
+      <ion-col>
+          <div class="button2" (click)='animateButton2()'> {{question.ans2}} </div>
+      </ion-col>
+    </ion-row>
+    <ion-row style="height: 5px"></ion-row>
+    <ion-row>
+      <ion-col>
+          <div class="button3" size="large" expand="block" color="warning" (click)='animateButton3()'> {{question.ans3}} </div>
+      </ion-col>
+      <ion-col>
+          <div class="button4" size="large" expand="block" color="danger" (click)='animateButton4()'> {{question.ans4}} </div>
+      </ion-col>
+    </ion-row>
+  </div>
+
+
+</ion-content>

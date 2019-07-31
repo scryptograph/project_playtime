@@ -1,0 +1,55 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/database"></ion-back-button>
+      </ion-buttons>
+      <ion-title>{{ question.title }}</ion-title>
+      <ion-buttons slot="end">
+        <ion-button (click)="deleteQuestion()">
+            <ion-icon slot="icon-only" name="trash"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+  
+    <ion-item>
+      <ion-label>
+        Enter Answer 1 (Green) : 
+      </ion-label>
+      <ion-input (input)="questionChanged()" id="answer1" [(ngModel)]="question.ans1" [ngModelOptions]="{standalone: true}"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>
+        Enter Option 2 (Blue) : 
+      </ion-label>
+      <ion-input (input)="questionChanged()" id="answer2"  [(ngModel)]="question.ans2" [ngModelOptions]="{standalone: true}"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>
+        Enter Option 3 (Yellow)  : 
+      </ion-label>
+      <ion-input type="text" (input)="questionChanged()"  id="answer3" [(ngModel)]="question.ans3" ></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>
+        Enter Option 4 (Red) : 
+      </ion-label>
+      <ion-input type="text" (input)="questionChanged()" id="answer4"  [(ngModel)]="question.ans4"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>
+        Enter Background Color # : 
+      </ion-label>
+      <ion-input type="text" (input)="questionChanged()" id="background"  [(ngModel)]="question.background"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block" color="dark" defaultHref="/database">Save Entry</ion-button>
+  
+  
+  </ion-content>

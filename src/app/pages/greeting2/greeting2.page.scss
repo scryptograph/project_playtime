@@ -1,0 +1,45 @@
+h1 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    --ion-font-family: 'Kodchasan-Light' !important;
+  }
+
+  .headingselector{
+      --background: ##f1c40f;
+  }
+
+  .button1 {
+    background-color: #2ecc71;
+    border: none;
+    color: white;
+    width: 72%;
+    height: 100%;
+    padding: 100px 80px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 10px 10px 100px;
+    opacity: 1.0;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .button2{
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    width: 72%;
+    padding: 100px 80px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 10px 10px 100px;
+    height: 100%;
+    opacity: 1.0;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+  }
