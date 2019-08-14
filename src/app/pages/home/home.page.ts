@@ -113,6 +113,40 @@ export class HomePage implements OnInit {
     },1200); 
   }
 
+  clickedAbout(){
+    anime({
+      targets: '.aboutButton',
+      scaleX: [
+        { value: 2, duration: 150,  easing: 'easeOutExpo' },
+        { value: 1, duration: 450 },
+      ],
+      scaleY: [
+        { value: 2, duration: 150,  easing: 'easeOutExpo' },
+        { value: 1, duration: 450 },
+      ],
+    });
+    setTimeout(() => {
+     [ this.navCtrl.navigateForward('/about')];
+    },1200); 
+  }
+
+  clickedAG(){
+    anime({
+      targets: '.AGButton',
+      scaleX: [
+        { value: 2, duration: 150,  easing: 'easeOutExpo' },
+        { value: 1, duration: 450 },
+      ],
+      scaleY: [
+        { value: 2, duration: 150,  easing: 'easeOutExpo' },
+        { value: 1, duration: 450 },
+      ],
+    });
+    setTimeout(() => {
+      window.open('http://www.aftergateway.org/', '_system', 'location=yes'); return false;
+    },1200); 
+  }
+
   clickedGreeting() {
     anime({
       targets: '.greetingButton',

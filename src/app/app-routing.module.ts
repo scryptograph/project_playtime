@@ -10,6 +10,8 @@ const routes: Routes = [
   { path: 'database', loadChildren: './pages/database/database.module#DatabasePageModule' },
   { path: 'database/:id', loadChildren: './pages/database-detail/database-detail.module#DatabaseDetailPageModule' },
   { path: 'greeting/:id', loadChildren: './pages/greeting-detail/greeting-detail.module#GreetingDetailPageModule' },
+  { path: 'about', loadChildren: './pages/about/about.module#AboutPageModule' },
+  { path: 'instructions', loadChildren: './pages/instructions/instructions.module#InstructionsPageModule' },
 ];
 
 @NgModule({

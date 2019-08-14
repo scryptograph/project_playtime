@@ -3,7 +3,7 @@
       <ion-buttons slot="start">
         <ion-back-button defaultHref="home"></ion-back-button>
       </ion-buttons>
-    <ion-title>Greeting Module</ion-title>
+    <ion-title style="font-family: 'PermanentMarker'; text-align:center">Greeting Module</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -12,13 +12,28 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </p>
 
-  <ion-button class="yesnobutton" expand="block" color="dark" (click)="click1()"> <ion-ripple-effect></ion-ripple-effect> Yes/No Module </ion-button>
+ 
 
-  <h4> Database Entries </h4>
+  <ion-grid>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+          <ion-button class="yesnobutton" expand="block" color="dark" (click)="click1()"> <ion-ripple-effect></ion-ripple-effect> Yes/No Module </ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+          <h2 style="font-family: 'PermanentMarker'; font-size: 40px; text-align: center"> Questions </h2>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+  </ion-grid>
 
   <ion-list>
       <ion-item button detail *ngFor="let question of questionsService.questions" [href]="'/greeting/' + question.id" routerDirection="forward">
-        <ion-label> <ion-ripple-effect></ion-ripple-effect> {{ question.title }}</ion-label>
+        <ion-label style="text-align: center"> <ion-ripple-effect></ion-ripple-effect> {{ question.title }}</ion-label>
       </ion-item>
     </ion-list>
 

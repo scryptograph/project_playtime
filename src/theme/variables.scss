@@ -2,6 +2,31 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
+
+@font-face {
+  font-family: 'Kodchasan-Light';
+  src: url('../assets/fonts/Kodchasan-Light.ttf');
+}
+@font-face {
+  font-family: 'Kodchasan-Bold';
+  src: url('../assets/fonts/Kodchasan-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../assets/fonts/OpenSans-Bold.ttf')
+}
+
+@font-face {
+  font-family: 'OpenSans-Light';
+  src: url('../assets/fonts/OpenSans-Light.ttf')
+}
+
+@font-face {
+  font-family: 'PermanentMarker';
+  src: url(../assets/fonts/Permanent_Marker/PermanentMarker-Regular.ttf)
+}
+
 :root {
   /** primary **/
   --ion-color-primary: #3880ff;
@@ -75,13 +100,12 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 
-  @font-face {
-    font-family: Kodchasan-Light;
-    src: url('../assets/fonts/Kodchasan-Light.ttf');
-  }
-  @font-face {
-    font-family: Kodchasan-Bold;
-    src: url('../assets/fonts/Kodchasan-Bold.ttf');
+ 
+  --ion-font-family: 'Kodchasan-Bold';
+  --ion-font-family: 'OpenSans-Light';
+
+  .header-font{
+    font-family: "OpenSans-Light";
   }
 
 }

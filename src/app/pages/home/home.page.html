@@ -1,9 +1,56 @@
-<ion-content class="homepage" (click)="setbackground()" tappable padding> 
+<ion-content class="homepage" (click)="setbackground()" tappable padding > 
+    <h1 style="align-content: center">Switch Sidekick</h1>
 
-  <h1>Switch Sidekick</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <ion-grid>
+    <ion-row style="height: 150px">
+        
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div >
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col></ion-col>
+        <ion-col>
+            <ion-button expand="block" class="greetingButton" color="primary" (click)="clickedGreeting()"> Instructions </ion-button>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col></ion-col>
+          <ion-col>
+              <ion-button expand="block" class="aboutButton" color="medium" (click)="clickedAbout()"> Project Playtime Initiative </ion-button>
+          </ion-col>
+          <ion-col></ion-col>
+        </ion-row>
+    <ion-row >
+      <ion-col></ion-col>
+      <ion-col >
+          <ion-button expand="block" class="databaseButton" color="dark" (click)="clickedDatabase()"> View/Modify Questions </ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+          <ion-button expand="block" class="greetingButton" color="danger" (click)="clickedGreeting()"> Start Module </ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col></ion-col>
+        <ion-col>
+            <ion-button expand="block" class="AGButton" color="tertiary" (click)="clickedAG()"> The After Gateway Foundation </ion-button>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+    
+  </ion-grid>
+ 
 
-  <ion-button expand="block" class="databaseButton" color="dark" (click)="clickedDatabase()"> View/Modify Database </ion-button>
-  <ion-button expand="block" class="greetingButton" color="danger" (click)="clickedGreeting()">Greeting Module</ion-button>
 
 </ion-content>
