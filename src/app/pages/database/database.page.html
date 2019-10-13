@@ -8,17 +8,26 @@
 </ion-header>
 
 <ion-content class="homepage">
+  <ion-grid>
+    <ion-row></ion-row>
+    <ion-row style="padding: 40px 105px;">
+      <p> Modify the Questions and Answers in the Module Here! Click on "ADD QUESTION" Button to add a new Question to the Database. To modify the current database, scroll below and find the question to modify. Then click on the Add Question Button Below. When done with modifications, hit the back button to go to the Home Page!
+    </ion-row>
+  </ion-grid>
 
-  <p>This is the Greeting Database. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-  
-  <p>After Gateway helps enriches the lives of adults with developmental disabilities after the traditional North Carolina special education program has concluded. While North Carolina funds several staff members who work one-on-one Additional information is available on their website: http://www.aftergateway.org/. </p>
-  <ion-button expand="block" color="dark" (click)="addQuestion()">Add Greeting</ion-button>
+   <ion-row>
+      <ion-col></ion-col>
+      <ion-col>
+          <ion-button class="yesnobutton" expand="block" color="dark" (click)="addQuestion()"> <ion-ripple-effect></ion-ripple-effect> ADD NEW QUESTION </ion-button>
+      </ion-col>
+      <ion-col></ion-col>
+    </ion-row>
 
-  <h3>Greeting Database</h3>
+  <h2 style="padding: 5px 45px; text-align: center; font-family: 'PermanentMarker';">Question Database</h2>
 
   <ion-list>
     <ion-item button detail *ngFor="let question of questionsService.questions" [href]="'/database/' + question.id" routerDirection="forward">
-      <ion-label>{{ question.title }}</ion-label>
+      <ion-label style="text-align: center;">{{ question.title }}</ion-label>
     </ion-item>
   </ion-list>
 

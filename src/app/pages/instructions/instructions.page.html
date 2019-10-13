@@ -1,9 +1,36 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>Instructions</ion-title>
+  <ion-toolbar class="new-background-color">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/home"></ion-back-button>
+        </ion-buttons>
+    <ion-title style="font-family: 'PermanentMarker'; text-align:center">Instructions</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="homepage">
+  
+    <ion-grid>
+        <ion-row style="padding: 500px 0;">
+          <ion-col>
+            <div class="ion-text-center">
+              <h3>Connect Tablet to SwitchSidekick</h3>
+              Power on the Switch board and make sure it is near the tablet. Make sure that both the Tablet and the Switch Board has sufficient charge to continue operation. 
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="ion-text-center">
+              <h3>Connect to Bluetooth</h3>
+              Open Bluetooth Settings and Connect to "ESP32 HID Device" If you can't find this device in your list, then refresh and wait a few minutes. 
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="ion-text-center">
+              <h3>Start Playing!</h3>
+              Once the Switch Board has connected, go to the Home page, click on Start Module and verify that the keys on the Board work in game.
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+
 
 </ion-content>

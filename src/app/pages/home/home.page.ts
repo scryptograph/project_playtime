@@ -164,4 +164,21 @@ export class HomePage implements OnInit {
     },1200);
   }
 
+  clickedInstructions() {
+    anime({
+      targets: '.instructionButton',
+      scaleX: [
+        { value: 2, duration: 150,  easing: 'easeOutExpo' },
+        { value: 1, duration: 450 },
+      ],
+      scaleY: [
+        { value: 2, duration: 150,  easing: 'easeOutExpo' },
+        { value: 1, duration: 450 },
+      ],
+    });
+    setTimeout(() => {
+      this.navCtrl.navigateForward('/instructions');
+    },1200);
+  }
+
 }
